@@ -1,0 +1,71 @@
+{
+    "name": "jeffersongoncalves/filament-cloudflare-web-analytics",
+    "description": "Filament plugin for Cloudflare Web Analytics: injects the tracking script into your panels and adds a settings page, powered by Spatie Laravel Settings.",
+    "keywords": [
+        "jeffersongoncalves",
+        "laravel",
+        "filament",
+        "filament-plugin",
+        "filament-cloudflare-web-analytics",
+        "cloudflare",
+        "cloudflare-web-analytics",
+        "web-analytics",
+        "privacy",
+        "cookieless",
+        "spatie-laravel-settings"
+    ],
+    "homepage": "https://github.com/jeffersongoncalves/filament-cloudflare-web-analytics",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Jefferson Gonçalves",
+            "email": "gerson.simao.92@gmail.com",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php": "^8.2",
+        "filament/filament": "^3.3",
+        "jeffersongoncalves/filament-analytics-core": "^1.0",
+        "jeffersongoncalves/laravel-cloudflare-web-analytics": "^1.0"
+    },
+    "require-dev": {
+        "larastan/larastan": "^3.0",
+        "laravel/pint": "^1.0",
+        "orchestra/testbench": "^10.0",
+        "pestphp/pest": "^3.0",
+        "pestphp/pest-plugin-laravel": "^3.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "JeffersonGoncalves\\Filament\\CloudflareWebAnalytics\\": "src"
+        }
+    },
+    "scripts": {
+        "post-autoload-dump": "@php ./vendor/bin/testbench package:discover --ansi",
+        "analyse": "vendor/bin/phpstan analyse",
+        "test": "vendor/bin/pest",
+        "format": "vendor/bin/pint"
+    },
+    "config": {
+        "sort-packages": true,
+        "allow-plugins": {
+            "pestphp/pest-plugin": true,
+            "phpstan/extension-installer": true
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "JeffersonGoncalves\\Filament\\CloudflareWebAnalytics\\CloudflareWebAnalyticsServiceProvider"
+            ]
+        }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+    "autoload-dev": {
+        "psr-4": {
+            "JeffersonGoncalves\\Filament\\CloudflareWebAnalytics\\Tests\\": "tests"
+        }
+    }
+}
