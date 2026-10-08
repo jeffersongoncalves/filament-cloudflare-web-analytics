@@ -1,6 +1,6 @@
 <div class="filament-hidden">
 
-![Filament Cloudflare Web Analytics](https://raw.githubusercontent.com/jeffersongoncalves/filament-cloudflare-web-analytics/1.x/art/jeffersongoncalves-filament-cloudflare-web-analytics.png)
+![Filament Cloudflare Web Analytics](https://raw.githubusercontent.com/jeffersongoncalves/filament-cloudflare-web-analytics/2.x/art/jeffersongoncalves-filament-cloudflare-web-analytics.png)
 
 </div>
 
@@ -9,7 +9,7 @@
 [![Buy Me A Coffee](https://img.shields.io/badge/Buy%20Me%20A%20Coffee-support-FFDD00?style=flat-square&logo=buy-me-a-coffee&logoColor=black)](https://buymeacoffee.com/jeffersongoncalves)
 
 [![Latest Version on Packagist](https://img.shields.io/packagist/v/jeffersongoncalves/filament-cloudflare-web-analytics.svg?style=flat-square)](https://packagist.org/packages/jeffersongoncalves/filament-cloudflare-web-analytics)
-[![GitHub Code Style Action Status](https://img.shields.io/github/actions/workflow/status/jeffersongoncalves/filament-cloudflare-web-analytics/fix-php-code-style-issues.yml?branch=1.x&label=code%20style&style=flat-square)](https://github.com/jeffersongoncalves/filament-cloudflare-web-analytics/actions?query=workflow%3A"Fix+PHP+code+styling"+branch%3A1.x)
+[![GitHub Code Style Action Status](https://img.shields.io/github/actions/workflow/status/jeffersongoncalves/filament-cloudflare-web-analytics/fix-php-code-style-issues.yml?branch=2.x&label=code%20style&style=flat-square)](https://github.com/jeffersongoncalves/filament-cloudflare-web-analytics/actions?query=workflow%3A"Fix+PHP+code+styling"+branch%3A2.x)
 [![Total Downloads](https://img.shields.io/packagist/dt/jeffersongoncalves/filament-cloudflare-web-analytics.svg?style=flat-square)](https://packagist.org/packages/jeffersongoncalves/filament-cloudflare-web-analytics)
 [![License](https://img.shields.io/packagist/l/jeffersongoncalves/filament-cloudflare-web-analytics.svg?style=flat-square)](LICENSE.md)
 
@@ -28,7 +28,7 @@ Built on top of [jeffersongoncalves/laravel-cloudflare-web-analytics](https://gi
 ## Installation
 
 ```bash
-composer require jeffersongoncalves/filament-cloudflare-web-analytics:"^1.0"
+composer require jeffersongoncalves/filament-cloudflare-web-analytics:"^2.0"
 ```
 
 Publish the settings migrations and run them:
@@ -70,7 +70,7 @@ To render the script outside Filament, add `@include('cloudflare-web-analytics::
 ## Requirements
 
 - PHP 8.2 or higher
-- Filament 3.x
+- Filament 4.x
 
 ## Changelog
 

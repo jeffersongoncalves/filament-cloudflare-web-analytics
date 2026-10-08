@@ -2,24 +2,24 @@
 
 namespace JeffersonGoncalves\Filament\CloudflareWebAnalytics\Pages;
 
-use Filament\Forms\Components\Section;
 use Filament\Forms\Components\TextInput;
-use Filament\Forms\Form;
 use Filament\Pages\SettingsPage;
+use Filament\Schemas\Components\Section;
+use Filament\Schemas\Schema;
 use JeffersonGoncalves\CloudflareWebAnalytics\Settings\CloudflareWebAnalyticsSettings;
 
 class ManageCloudflareWebAnalyticsSettings extends SettingsPage
 {
     protected static string $settings = CloudflareWebAnalyticsSettings::class;
 
-    protected static ?string $navigationIcon = 'heroicon-o-chart-bar';
+    protected static string|\BackedEnum|null $navigationIcon = 'heroicon-o-chart-bar';
 
     public static function getNavigationLabel(): string
     {
         return __('filament-cloudflare-web-analytics::pages.navigation_label');
     }
 
-    public static function getNavigationGroup(): ?string
+    public static function getNavigationGroup(): string|\UnitEnum|null
     {
         return __('filament-cloudflare-web-analytics::pages.navigation_group');
     }
@@ -29,9 +29,10 @@ class ManageCloudflareWebAnalyticsSettings extends SettingsPage
         return __('filament-cloudflare-web-analytics::pages.title');
     }
 
-    public function form(Form $form): Form
+    public function form(Schema $schema): Schema
     {
-        return $form
+        return $schema
+            ->columns(null)
             ->schema([
                 Section::make(__('filament-cloudflare-web-analytics::pages.sections.cloudflare_web_analytics.heading'))
                     ->description(__('filament-cloudflare-web-analytics::pages.sections.cloudflare_web_analytics.description'))
