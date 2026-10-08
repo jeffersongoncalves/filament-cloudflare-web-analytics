@@ -13,9 +13,9 @@ description: Build and work with the Filament Cloudflare Web Analytics plugin â€
 
 ## Package Overview
 
-- **Package**: `jeffersongoncalves/filament-cloudflare-web-analytics` (branch `2.x`)
+- **Package**: `jeffersongoncalves/filament-cloudflare-web-analytics` (branch `3.x`)
 - **Namespace**: `JeffersonGoncalves\Filament\CloudflareWebAnalytics`
-- **Dependencies**: `jeffersongoncalves/filament-analytics-core:^2.0`, `jeffersongoncalves/laravel-cloudflare-web-analytics:^1.0`
+- **Dependencies**: `jeffersongoncalves/filament-analytics-core:^3.0`, `jeffersongoncalves/laravel-cloudflare-web-analytics:^1.0`
 
 ## Setup
 

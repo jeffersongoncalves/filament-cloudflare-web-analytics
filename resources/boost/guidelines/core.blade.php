@@ -6,7 +6,7 @@ Filament plugin for Cloudflare Web Analytics with a settings page powered by Spa
 
 @verbatim
 <code-snippet name="Install the plugin" lang="bash">
-composer require jeffersongoncalves/filament-cloudflare-web-analytics:"^2.0"
+composer require jeffersongoncalves/filament-cloudflare-web-analytics:"^3.0"
 php artisan vendor:publish --tag=cloudflare-web-analytics-settings-migrations
 php artisan migrate
 </code-snippet>
