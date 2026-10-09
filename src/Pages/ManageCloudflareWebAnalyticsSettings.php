@@ -7,6 +7,7 @@ use Filament\Pages\SettingsPage;
 use Filament\Schemas\Components\Section;
 use Filament\Schemas\Schema;
 use JeffersonGoncalves\CloudflareWebAnalytics\Settings\CloudflareWebAnalyticsSettings;
+use JeffersonGoncalves\FilamentAnalyticsCore\AbstractAnalyticsPlugin;
 
 class ManageCloudflareWebAnalyticsSettings extends SettingsPage
 {
@@ -21,7 +22,7 @@ class ManageCloudflareWebAnalyticsSettings extends SettingsPage
 
     public static function getNavigationGroup(): string|\UnitEnum|null
     {
-        return __('filament-cloudflare-web-analytics::pages.navigation_group');
+        return AbstractAnalyticsPlugin::navigationGroupFor('filament-cloudflare-web-analytics') ?? __('filament-cloudflare-web-analytics::pages.navigation_group');
     }
 
     public function getTitle(): string
