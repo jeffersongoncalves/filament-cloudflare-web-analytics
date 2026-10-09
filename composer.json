@@ -26,7 +26,7 @@
     "require": {
         "php": "^8.2",
         "filament/filament": "^5.3",
-        "jeffersongoncalves/filament-analytics-core": "^3.0",
+        "jeffersongoncalves/filament-analytics-core": "^3.1",
         "jeffersongoncalves/laravel-cloudflare-web-analytics": "^1.0"
     },
     "require-dev": {
